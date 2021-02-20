@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+}
+
+.agree_wrapper {
+    margin: 0 auto;
+    width: 95%;
+    background-color: #DDDDDD;
+    border-radius: 10px;
+}
+
+.agree_wrapper span {
+    margin-left: 30px;
+    width: 85%;
+    text-align: left;
+}
+
+.agree_wrapper button {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 30px;
+    margin-top: 10px;
+    transition: all 0.5s ease-in;
+    border: none;
+    border-radius: 10px;
+}
+
+.agree_wrapper #agree {
+    background-color: #CCFFFF;
+    margin-bottom: 10px;
+}
+
+.agree_wrapper #disagree {
+    background-color: #DFE2E5;
+}
+
+.agree_wrapper #disagree:hover {
+    background-color: #FF0000;
+}
+
+.agree_wrapper #agree:hover {
+    background-color: #00FF33;
+}
