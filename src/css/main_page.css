@@ -52,13 +52,13 @@ header .info>a {
     opacity: 1;
 }
 
-#info_box button {
+#info_box a {
     text-align: center;
+    display: block;
     margin: 10px auto;
     display: block;
     border: none;
     box-shadow: none;
-    width: 10px;
     height: 10px;
     text-decoration: solid;
 }

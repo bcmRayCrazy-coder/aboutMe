@@ -12,6 +12,7 @@ var config = {
 // Initialise Waves with the config
 Waves.init(config);
 Waves.attach('button', ['waves-button', 'waves-float']);
+Waves.attach('#info_box', 'waves-light');
 
 var finder_active = false;
 
