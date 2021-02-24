@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ray</title>
+    <script src="https://cdn.staticfile.org/angular.js/1.4.6/angular.min.js"></script>
     <link rel="stylesheet" href="src/waves/waves.css">
     <link rel="stylesheet" href="src/css/main_page.css">
 </head>
@@ -13,14 +14,24 @@
 <body>
     <header>
         <span>ray_crazy个人</span>
+        <br>
         <div class="info">
             <a href="#" onclick="show_finder()" id="finder_txt">导航</a>
+            <a href="#" onclick="show_login()" id="login_txt">登陆|</a>
         </div>
     </header>
 
-    <div id="info_box" class="hide">
+    <div id="info_box" class="hide popup">
         <a href="">主页</a>
         <a href="http://www.logoxm.cn/">Logo项目</a>
+    </div>
+    <div id="login_box" class="hide popup">
+        <div ng-app="loginApp" ng-controller="loginCtrl">
+            昵称:<input type="text" ng-model="nickname" placeholder="你的昵称"><br> 爱好:
+            <input type="text" ng-model="love" placeholder="你的爱好"><br>
+            <p>信息: <br> 昵称: {{nickname}} <br> 爱好: {{love}}</p>
+            <button id="enter">提交</button>
+        </div>
     </div>
     <script src="src/waves/waves.js"></script>
     <script src="src/js/main_page.js"></script>
